@@ -1,0 +1,43 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 2px -2px #ccc;
+}
+
+header ul.nav-menu li a,
+header a {
+  text-decoration: none;
+  color: #111;
+  font-size: 20px;
+}
+
+header ul.nav-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header ul.nav-menu li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 487px) {
+  header ul.nav-menu,
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+  }
+}
